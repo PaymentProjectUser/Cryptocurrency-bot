@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${}
+    password: ${}
+    driver-class-name: org.postgresql.Driver
+
+scheduling:
+  cron:
+    cryptocurrency-update-time: '0 0 8 * * ?'       # every day at 08:00 UTC
+
+telegram:
+  security:
+    bot-name: Course_change_test_bot
+    token: 6695514972:AAHmqs8wbpFJHVZi6q_YHW8EKuMBXsagalE
